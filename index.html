@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shrouk | Fashion Designer</title>
+
+<meta name="description" content="Shrouk Fashion Designer — Elegant handmade corsets and statement pieces.">
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#fff8f9;
+    color:#2d2023;
+}
+
+/* HERO */
+
+.hero{
+    min-height:92vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(135deg,#fff8f9,#f8dfe5);
+}
+
+.ss{
+    font-family:Georgia,serif;
+    font-size:55px;
+    letter-spacing:-8px;
+    margin-bottom:10px;
+}
+
+.logo{
+    font-family:Georgia,serif;
+    font-size:75px;
+    line-height:.9;
+    font-style:italic;
+}
+
+.hero p{
+    letter-spacing:5px;
+    font-size:12px;
+    margin:20px 0 30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2d2023;
+    color:white;
+    padding:14px 28px;
+    border-radius:30px;
+    font-size:13px;
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    opacity:.9;
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:rgba(255,248,249,.95);
+    border-bottom:1px solid #efd9df;
+}
+
+nav .inner{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    gap:34px;
+    padding:15px;
+}
+
+nav a{
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+/* SECTIONS */
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h2{
+    font-family:Georgia,serif;
+    font-size:42px;
+    font-weight:500;
+}
+
+.title p{
+    font-size:12px;
+    color:#806d73;
+    margin-top:8px;
+    letter-spacing:1px;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.about-card{
+    background:white;
+    padding:42px;
+    border:1px solid #f0dce1;
+}
+
+.about-card h3{
+    font-family:Georgia,serif;
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.about-card p{
+    line-height:1.9;
+    color:#6f5d62;
+    font-size:14px;
+}
+
+/* COLLECTION */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.item{
+    background:white;
+    border:1px solid #f0dce1;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.item img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+    transition:.4s;
+}
+
+.item:hover img{
+    transform:scale(1.03);
+}
+
+.caption{
+    padding:14px 15px;
+    font-family:Georgia,serif;
+    font-size:17px;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+    background:#f8e1e6;
+    max-width:none;
+}
+
+.contact-inner{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact h2{
+    font-family:Georgia,serif;
+    font-size:42px;
+}
+
+.contact p{
+    margin:12px 0 28px;
+    color:#6f5d62;
+}
+
+.wa{
+    background:#2d2023;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:28px;
+    font-size:11px;
+    letter-spacing:1px;
+    color:#8a767b;
+}
+
+/* MOBILE */
+
+@media(max-width:750px){
+
+    .logo{
+        font-size:58px;
+    }
+
+    .ss{
+        font-size:42px;
+    }
+
+    nav .inner{
+        gap:16px;
+    }
+
+    nav a{
+        font-size:10px;
+        letter-spacing:1px;
+    }
+
+    section{
+        padding:55px 16px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .gallery{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .item img{
+        height:270px;
+    }
+
+    .title h2,
+    .contact h2{
+        font-size:34px;
+    }
+}
+
+@media(max-width:480px){
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .item img{
+        height:390px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HERO -->
+
+<header class="hero" id="home">
+
+    <div>
+
+        <div class="ss">
+            SS
+        </div>
+
+        <div class="logo">
+            Shrouk
+        </div>
+
+        <p>
+            FASHION DESIGNER
+        </p>
+
+        <a href="#collection" class="btn">
+            VIEW COLLECTION
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="inner">
+
+        <a href="#home">
+            HOME
+        </a>
+
+        <a href="#about">
+            ABOUT
+        </a>
+
+        <a href="#collection">
+            COLLECTION
+        </a>
+
+        <a href="#contact">
+            CONTACT
+        </a>
+
+    </div>
+
+</nav>
+
+
+<main>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="title">
+
+        <h2>
+            Made With Love
+        </h2>
+
+        <p>
+            DETAILS THAT MAKE THE DIFFERENCE
+        </p>
+
+    </div>
+
+
+    <div class="about">
+
+        <div class="about-card">
+
+            <h3>
+                Shrouk Fashion Designer
+            </h3>
+
+            <p>
+                Elegant corsets and statement pieces designed with feminine details,
+                delicate textures and a signature romantic touch.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <h3>
+                Custom Designs
+            </h3>
+
+            <p>
+                Every piece is created to feel special — from the silhouette and
+                fabric to the smallest finishing detail.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- COLLECTION -->
+
+<section id="collection">
+
+    <div class="title">
+
+        <h2>
+            The Collection
+        </h2>
+
+        <p>
+            SHROUK SIGNATURE PIECES
+        </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+
+        <!-- 1 -->
+
+        <div class="item">
+
+            <img
+                src="images/look-01.jpg"
+                alt="Pink Lace Corset"
+            >
+
+            <div class="caption">
+                Pink Lace Corset
+            </div>
+
+        </div>
+
+
+
+        <!-- 2 -->
+
+        <div class="item">
+
+            <img
+                src="images/look-02.png"
+                alt="Ivory Lace Corset"
+            >
+
+            <div class="caption">
+                Ivory Lace Corset
+            </div>
+
+        </div>
+
+
+
+        <!-- 3 -->
+
+        <div class="item">
+
+            <img
+                src="images/look-03.png"
+                alt="Burgundy Lace Corset"
+            >
+
+            <div class="caption">
+                Burgundy Lace Corset
+            </div>
+
+        </div>
+
+
+
+        <!-- 4 -->
+
+        <div class="item">
+
+            <img
+                src="images/look-04.jpg"
+                alt="Chocolate Corset"
+            >
+
+            <div class="caption">
+                Chocolate Statement Corset
+            </div>
+
+        </div>
+
+
+
+        <!-- 5 -->
+
+        <div class="item">
+
+            <img
+                src="images/look-05.jpg"
+                alt="White Corset"
+            >
+
+            <div class="caption">
+                Pearl
